@@ -133,7 +133,7 @@ export function WaitingRoom() {
                     <p className="font-medium truncate text-sm md:text-base">
                       {p.nickname}
                       {p.id === player?.id && (
-                        <span className="text-primary ml-2 text-xs">(Ban)</span>
+                        <span className="text-primary ml-2 text-xs">(Bạn)</span>
                       )}
                     </p>
                     <p className="text-xs text-muted-foreground">

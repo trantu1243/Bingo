@@ -25,16 +25,16 @@ export function GameplayScreen() {
   const handleCellClick = (number: number) => {
     // Check if number is disabled (missed)
     if (player?.missedNumbers?.includes(number)) {
-      toast.error('O nay da bi vo hieu - ban da bo lo!');
+      toast.error('Ô này đã bị vô hiệu - bạn đã bỏ lỡ!');
       return;
     }
     
     // Can only mark the current number being called
     if (game.currentNumber !== number) {
       if (game.calledNumbers.includes(number)) {
-        toast.error('Het thoi gian cho so nay!');
+        toast.error('Hết thời gian cho số này!');
       } else {
-        toast.error('So nay chua duoc goi!');
+        toast.error('Số này chưa được gọi!');
       }
       return;
     }
@@ -51,7 +51,7 @@ export function GameplayScreen() {
     if (player && player.bingoLines >= 3) {
       pressBingo();
     } else {
-      toast.error('Ban can it nhat 3 duong Bingo!');
+      toast.error('Bạn cần ít nhất 3 đường Bingo!');
     }
   };
 
@@ -107,7 +107,7 @@ export function GameplayScreen() {
                 </div>
               ) : (
                 <div className="w-24 h-24 md:w-40 md:h-40 rounded-full bg-muted/20 border-2 border-muted flex items-center justify-center">
-                  <span className="text-muted-foreground text-xs md:text-sm">Dang cho...</span>
+                  <span className="text-muted-foreground text-xs md:text-sm">Đang chờ...</span>
                 </div>
               )}
             </div>
@@ -116,10 +116,10 @@ export function GameplayScreen() {
           {/* Bingo Board */}
           <div className="glass-card rounded-2xl p-3 md:p-6 flex-1">
             <div className="flex items-center justify-between mb-3 md:mb-4">
-              <h2 className="text-xs md:text-sm font-medium text-muted-foreground">Bang cua ban</h2>
+              <h2 className="text-xs md:text-sm font-medium text-muted-foreground">Bảng của bạn</h2>
               <div className="flex items-center gap-2">
                 <Star className="w-3 md:w-4 h-3 md:h-4 text-primary" />
-                <span className="font-medium text-sm md:text-base">{player?.bingoLines || 0} Duong</span>
+                <span className="font-medium text-sm md:text-base">{player?.bingoLines || 0} Đường</span>
               </div>
             </div>
             
@@ -172,7 +172,7 @@ export function GameplayScreen() {
               </Button>
               {!canBingo && (
                 <p className="text-center text-xs text-muted-foreground mt-2">
-                  Ban can 3 duong de goi Bingo (can them {3 - (player?.bingoLines || 0)} duong)
+                  Bạn cần 3 đường để gọi Bingo (cần thêm {3 - (player?.bingoLines || 0)} đường)
                 </p>
               )}
             </div>
@@ -184,7 +184,7 @@ export function GameplayScreen() {
           {/* Called numbers */}
           <div className="glass-card rounded-2xl p-3 md:p-4">
             <h2 className="text-xs md:text-sm font-medium text-muted-foreground mb-2 md:mb-3">
-              So da goi ({game.calledNumbers.length}/25)
+              Số đã gọi ({game.calledNumbers.length}/25)
             </h2>
             <div className="grid grid-cols-5 gap-1.5 md:gap-2">
               {Array.from({ length: 25 }, (_, i) => i + 1).map((number) => {
@@ -214,7 +214,7 @@ export function GameplayScreen() {
           {/* Players leaderboard */}
           <div className="glass-card rounded-2xl p-3 md:p-4 flex-1">
             <h2 className="text-xs md:text-sm font-medium text-muted-foreground mb-2 md:mb-3">
-              Bang xep hang
+              Bảng xếp hạng
             </h2>
             <ScrollArea className="h-[150px] md:h-[200px] lg:h-[calc(100vh-520px)]">
               <div className="space-y-1.5 md:space-y-2 pr-2">
@@ -250,7 +250,7 @@ export function GameplayScreen() {
                       <p className="font-medium text-xs md:text-sm truncate">
                         {p.nickname}
                         {p.id === player?.id && (
-                          <span className="text-primary ml-1 text-[10px] md:text-xs">(Ban)</span>
+                          <span className="text-primary ml-1 text-[10px] md:text-xs">(Bạn)</span>
                         )}
                       </p>
                     </div>

@@ -152,7 +152,7 @@ export function WinnerScreen() {
         {!isWinner && (
           <div className="mt-6 md:mt-8 glass p-3 md:p-4 rounded-xl animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <p className="text-muted-foreground text-sm md:text-base">
-              Chuc may man lan sau! Ban da co {player?.bingoLines || 0} duong.
+              Chúc may mắn lần sau! Bạn đã có {player?.bingoLines || 0} đường.
             </p>
           </div>
         )}

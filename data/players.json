@@ -1,0 +1,30 @@
+[
+  {
+    "id": "bc24fnektc8",
+    "nickname": "Hihi",
+    "socketId": "So3LoC7Ah2QB26u3AAAP",
+    "boardNumbers": [],
+    "markedNumbers": [],
+    "missedNumbers": [],
+    "bingoLines": 0,
+    "isReady": false,
+    "isBoardLocked": false,
+    "isOnline": true,
+    "joinedAt": 1776370441400,
+    "avatarColor": "#EAB308"
+  },
+  {
+    "id": "zbicxlcv9tj",
+    "nickname": "trantu123",
+    "socketId": "cQXcOZh2MP0nomXhAAAN",
+    "boardNumbers": [],
+    "markedNumbers": [],
+    "missedNumbers": [],
+    "bingoLines": 0,
+    "isReady": false,
+    "isBoardLocked": false,
+    "isOnline": true,
+    "joinedAt": 1776372107282,
+    "avatarColor": "#D946EF"
+  }
+]

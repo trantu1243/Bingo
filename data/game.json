@@ -1,0 +1,15 @@
+{
+  "id": null,
+  "status": "waiting",
+  "calledNumbers": [],
+  "currentNumber": null,
+  "countdown": null,
+  "winnerId": null,
+  "maxPlayers": 20,
+  "startedAt": null,
+  "endedAt": null,
+  "setupEndTime": null,
+  "adminSelectedNumbers": [],
+  "numberQueue": [],
+  "numberCountdown": null
+}

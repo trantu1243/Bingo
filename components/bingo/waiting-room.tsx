@@ -28,7 +28,7 @@ export function WaitingRoom() {
       <header className="relative z-10 flex items-center justify-between mb-4 md:mb-8">
         <div>
           <h1 className="text-xl md:text-3xl font-bold text-primary">
-            {"Fotobe's"} <span className="text-foreground">BINGO</span>
+            {"Fotober's"} <span className="text-foreground">BINGO</span>
           </h1>
           <p className="text-muted-foreground text-xs md:text-sm">Phòng chờ</p>
         </div>

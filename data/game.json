@@ -1,14 +1,14 @@
 {
-  "id": null,
-  "status": "waiting",
+  "id": "gylqc56get",
+  "status": "setup",
   "calledNumbers": [],
   "currentNumber": null,
   "countdown": null,
   "winnerId": null,
   "maxPlayers": 20,
-  "startedAt": null,
+  "startedAt": 1776433386023,
   "endedAt": null,
-  "setupEndTime": null,
+  "setupEndTime": 1776433566023,
   "adminSelectedNumbers": [],
   "numberQueue": [],
   "numberCountdown": null

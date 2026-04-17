@@ -229,9 +229,9 @@ export function GameplayScreen() {
                     {/* Rank */}
                     <div className={`
                       w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center text-[10px] md:text-xs font-bold
-                      ${index === 0 ? 'bg-yellow-500 text-black' : ''}
+                      ${index === 0 ? 'bg-blue-500 text-black' : ''}
                       ${index === 1 ? 'bg-gray-300 text-black' : ''}
-                      ${index === 2 ? 'bg-amber-600 text-white' : ''}
+                      ${index === 2 ? 'bg-blue-800 text-white' : ''}
                       ${index > 2 ? 'bg-muted text-muted-foreground' : ''}
                     `}>
                       {index + 1}

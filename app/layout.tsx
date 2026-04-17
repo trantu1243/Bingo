@@ -16,13 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fotobe's Bingo - Trò chơi Bingo nhiều người",
+  title: "Fotober's Bingo - Trò chơi Bingo nhiều người",
   description: 'Chơi Bingo với tối đa 20 người chơi theo thời gian thực!',
   generator: 'trantu',
 }
 
 export const viewport: Viewport = {
-  themeColor: '#1a1a1a',
+  themeColor: '#0f172a',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,

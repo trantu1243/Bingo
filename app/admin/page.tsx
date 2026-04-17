@@ -182,6 +182,7 @@ export default function AdminDashboard() {
   }, [socket]);
 
   const handleStartCountdown = useCallback(() => {
+    console.log('Starting countdown', game);
     socket?.emit('admin_start_countdown');
   }, [socket]);
 
@@ -454,7 +455,8 @@ export default function AdminDashboard() {
               {game.status === 'setup' && (
                 <Button
                   onClick={handleStartCountdown}
-                  className="w-full h-10 md:h-12 gap-2 bg-primary hover:bg-primary/90 text-sm md:text-base"
+                  disabled={game.setupEndTime ? Date.now() < game.setupEndTime : false}
+                  className="w-full h-10 md:h-12 gap-2 bg-primary hover:bg-primary/90 text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Timer className="w-4 h-4" />
                   Bắt đầu đếm ngược
@@ -490,6 +492,7 @@ export default function AdminDashboard() {
             <Card 
               className="glass-card border-primary/50 cursor-pointer hover:border-primary transition-colors"
               onClick={() => setShowWinnerModal(true)}
+              
             >
               <CardContent className="p-4 md:p-6 text-center">
                 <Trophy className="w-10 h-10 md:w-12 md:h-12 text-primary mx-auto mb-2 md:mb-3" />

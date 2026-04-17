@@ -50,7 +50,7 @@ export function LandingPage() {
         {/* Logo/Title */}
         <div className="text-center mb-8 md:mb-12 animate-slide-up">
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-2 tracking-tight">
-            {"Fotobe's"}
+            {"Fotober's"}
           </h1>
           <h2 className="text-5xl md:text-7xl font-black text-foreground">
             BINGO
